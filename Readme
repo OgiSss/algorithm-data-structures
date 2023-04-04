@@ -1,0 +1,80 @@
+What is an algorithm? 
+
+Algorithm is set of well-defined instructions to solve particular problem 
+
+Characteristics:
+
+- well defined inputs and outputs 
+- Each step should be clear and unambiguous 
+- Language independent 
+
+Why algorithms? 
+
+- As a developer you are going across problems that you need to solve 
+- Learning algorithms translates to learning different techniques to efficiently solve those problems 
+- One problem can be solved in many ways using different algorithms
+
+Algorithms analysis: 
+
+- There are multiple ways to solve one problem 
+- Ex: There are multiple algorithms to sort a list of numbers 
+- How do we analize which one of them is the most efficient algorithm? 
+- Generally when we talk about performance we use an absolute measure 
+- If I can run 100 meters in 12 seconds, I'm faster than someone who takes 15 seconds.
+
+!!! The absolute running time of an algorithm cannot be predicted since it depends on a number of factors 
+
+- Programming language used to implement the algorithm
+- The computer the program runs on 
+- Other programs running at the same time
+- Quality of the operating system 
+
+SO!
+
+We evaluate the performance of the algorithm in terms of its input size: 
+Time complexity - Amount of time taken by an algorithm to run, as a function of input size 
+Space complexity - Amount of memory taken by an algorithm to run, as a function of input size
+
+!!! By evaluating against the input size, the analysis is not only machine independent, but the comparison is also more appropriate
+
+How to represent complexity?
+
+Asymptotic notation 
+- Mathematical tools to represent time and space complexity
+
+1. Big-O Notation (O- notation) - Worst case complexity
+2. Omega Notation (Omage - notation) - Best case complexity
+3. Theta Notation (Teta - notation) - Average case complexity
+
+Big-O Notation 
+The worst case complexity of an algorithm is represented using the Big-O notation
+Big-O Notation describes the complexity of an algorith using algebraic terms 
+
+It has two important characteristics 
+- it is expressed in terms of the input 
+- it focuses on the bigger without getting caught up in the minute details 
+
+Big-O Time complexity 
+
+- If we have only one loop time complexity is O(n) - Linear
+- Without any loop it's O(1) - Constant
+- Two nested loops are O(n2) - Quadratic 
+- Three nested loops O(n3) - Cubic 
+- Input size reduces by half every iteration - O(logn) - Logarithmic 
+
+Space complexity 
+O(1) - Constant - sort with the array without utilizing additional arrays
+O(n) - Linear - extra space needed where the extra space needed as the input size grows 
+O(logn) - Logarithmic - extra space needed But not as the same rate as input size 
+
+Image: 
+https://ekhu94.medium.com/an-introduction-to-big-o-notation-5784d7fe8d29
+
+
+O(1) - constant - calculation not depend on input size
+O(n) - linear - 1 loop
+Log(n) - input size reduced by half
+O(n2) - 2 nested loops 
+
+* - times 
+reminder
