@@ -1,8 +1,7 @@
 function linearSearch(n) {
 	const array = [1, 7, -10, 5, 3, 8, 9];
 	for (let i = 0; i < Math.abs(n); i++) {
-		const element = array[i];
-		if (element === n) {
+		if (array[i] === n) {
 			return i;
 		}
 	}
