@@ -5,18 +5,18 @@ function binarySearch(array, target) {
 	while (leftIndex <= rightIndex) {
 		let middleIndex = Math.floor((leftIndex + rightIndex) / 2);
 
-        if(target === array[middleIndex]){
-            return middleIndex;
-        }
+		if (target === array[middleIndex]) {
+			return middleIndex;
+		}
 
-        if(target < array[middleIndex]){
-            rightIndex = middleIndex - 1;
-        } else {
-            leftIndex = middleIndex + 1;
-        }
+		if (target < array[middleIndex]) {
+			rightIndex = middleIndex - 1;
+		} else {
+			leftIndex = middleIndex + 1;
+		}
 	}
 
-    return -1;
+	return -1;
 }
 
 console.log(binarySearch([-5, -1, 2, 4, 8, 10], 2));
